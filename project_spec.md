@@ -19,7 +19,7 @@
 
 - **Category: Education**
 - **Mobile: Allows for users to study anytime, anywhere. Whether it is at home, waiting for the bus, or right before a big exam.**
-- **Story:**
+- **Story: **
 - **Market:**
 - **Habit:**
 - **Scope:**
@@ -59,7 +59,8 @@ Required Feature
 ## Wireframes
 
 <!-- Add picture of your hand sketched wireframes in this section -->
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="![wireframe](https://github.com/coderkai03/AI-Flashcards/assets/91811876/7d194b6b-2150-4c23-b71a-e37e0f0472fc)
+" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 

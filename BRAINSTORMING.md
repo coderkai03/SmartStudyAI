@@ -63,39 +63,62 @@ APP EVALUATION CRITERIA
 
 
 Mobile: How uniquely mobile is the product experience?
-What makes your app more than a glorified website? |
---- | --- | ---
-AI Flashcards | Able to swipe through cards, shuffle, and manage content on card.
-AI Tier List | Dynamically generates items based on user input and arranges them throughout list.
-AI Shopping Comparison | Allows the user to browse through item catalogs and manage shopping cart.
+* What makes your app more than a glorified website?
+
+|Project                 |Answer
+|------------------------|-----------------------------------------------------------------------------------|
+| AI Flashcards          | Able to swipe through cards, shuffle, and manage content on card.                 |
+| AI Tier List           | Dynamically generates items based on user input and arranges them throughout list.|
+| AI Shopping Comparison | Allows the user to browse through item catalogs and manage shopping cart.         |
 
 Story: How compelling is the story around this app once completed?
-How clear is the value of this app to your audience?
-How well would your friends or peers respond to this product idea?
+* How clear is the value of this app to your audience?
+* How well would your friends or peers respond to this product idea?
+
+
+|Project                 |Answer
+|------------------------|-----------------------------------------------------------------------------------|
+| AI Flashcards          | This app would boost study productivity for plenty of students. Our classmates would love studying easier and faster with it.|
+| AI Tier List           | This app would hasten researching on a large scale, whether it be for food, video games, Gundams, or anything else. People making decisions with large item pools will save so much time.|
+| AI Shopping Comparison | This app would assist with shopping on multiple platforms like Amazon, Walmart, or Target. Friends and family would love shopping cheaper.|
+
+
 Market: How large or unique is the market for this app?
 What's the size and scale of your potential user base?
 Does this app provide huge value to a niche group of people?
 Do you have a well-defined audience of people for this app?
+
+
+|Project                 |Answer
+|------------------------|-----------------------------------------------------------------------------------|
+| AI Flashcards          | This app would cater to students in K-12, college, and post-grads. Its niche would be for learners and academia.|
+| AI Tier List           | This app would assist researchers and decision maker. It can support anyone browsing all of their options.|
+| AI Shopping Comparison | This app would aid shoppers that frequent big box marts. It primarily helps online shoppers of Amazon, Walmrt, or Target|
+
+
 Habit: How habit-forming or addictive is this app?
 How frequently would an average user open and use this app?
 Does an average user just consume your app, or do they use it to create something?
+
+
+|Project                 |Answer
+|------------------------|-----------------------------------------------------------------------------------|
+| AI Flashcards          | For students studying daily for classes, it could be used for a couple hours daily. Users can create their own study sets and manage them as desired.|
+| AI Tier List           | For decisions encompassing wide varieties of options, it may come in handy on occasion. Users can also rearrange tier list items after generation.|
+| AI Shopping Comparison | For grocery, clothing, and essential shoppers, this app would be used every couple days. Users can browse items and interact with cart items.|
+
+
 Scope: How well-formed is the scope for this app?
 How technically challenging will it be to complete this app by the deadline?
 Is a stripped-down version of this app still interesting to build?
 How clearly defined is the product you want to build?
- Close Section
-With your group:
-Evaluate each of your top three app ideas based on the criteria above.
-💡 For an example, see the Evaluate and Categorize section in the Example Brainstorming doc
-Step 2c: Make the final decision
-Take some time on this step!
-Based on your app evaluations, discuss which app you'll build for this project.
-Hold a vote and make a final group decision!
-📬 Deliverables for Activity 1
-Your HackMD document, containing:
-Brainstorming ideas from Step 1
-Three (3) evaluated ideas from Step 2
-These must use the app evaluation criteria: Mobile, Story, Market, Habit, and Scope
-Your final idea
-🎉🎉🎉 Congratulate yourself and your group members! You've officially started your capstone project! 🚀
 
+
+|Project                 |Answer
+|------------------------|-----------------------------------------------------------------------------------|
+| AI Flashcards          | Very doable. The only slightly challenging part will be connecting to ChatGPT. Otherwise, it essential operates on an array of text values and data.|
+| AI Tier List           | Could be a bit harder due to item rearrangement with GUI and ChatGPT. Makes for a moderately interesting build with saving masses of data to memory.|
+| AI Shopping Comparison | Would be the hardest to code. Need to connect to multiple API databases with varying JSON structure. Also would likely require search and sort operations on massive queries.|
+
+
+# Final idea: AI Flashcards

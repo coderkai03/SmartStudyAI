@@ -14,36 +14,36 @@ Cody Monday Wednesday Thursday Friday Saturday Sunday after 1pm
 Brainstorming - Your 3 ideas. Put your name at the head! Each group member should record at least three new app ideas, including a brief description of each idea. 
 
 # Rowan W Osmon
-1 - Stable diffusion api - Text to image generation -> Take users text input and generate AI images -> combine with speech to text?
-2 - Google cloud - Speech to text api -> uses microphone as input and outputs text from the user -> combine with translation api for speech to alternate language text?
-3 - MediaWiki api - Access/edit wiki’s -> mobile app for rare wikis Ex: 1d4-chan tactics pages https://1d4chan.org/wiki/Warhammer_40,000/10th_Edition_Tactics 
-4 - Ai Tierlist generator -> input is subject from user, output a tierlist on that subject 
+* Stable diffusion api - Text to image generation -> Take users text input and generate AI images -> combine with speech to text?
+* Google cloud - Speech to text api -> uses microphone as input and outputs text from the user -> combine with translation api for speech to alternate language text?
+* MediaWiki api - Access/edit wiki’s -> mobile app for rare wikis Ex: 1d4-chan tactics pages https://1d4chan.org/wiki/Warhammer_40,000/10th_Edition_Tactics 
+* Ai Tierlist generator -> input is subject from user, output a tierlist on that subject 
 
 
 # Cody Kneale
-1 - Learning a new language with AI and AI voice
-2 - Shopping list with recipes using AI
-3 - Outfit sorter using AI
+* Learning a new language with AI and AI voice
+* Shopping list with recipes using AI
+* Outfit sorter using AI
 
 # Andrew Solbjor
-1 - AI budgeter for groceries
-2 - Mental Health chat app
-3 - College study group app
+* AI budgeter for groceries
+* Mental Health chat app
+* College study group app
 
 # Enrique V
-1 - spotify api track favorite song/genre
-2 - internship application tracker 
-3 - Ai image creator
+* spotify api track favorite song/genre
+* internship application tracker 
+* Ai image creator
 
 # Erik Perez
-1 - Google maps api
-2- Item shop Availability
-3- Text to image converter
+* Google maps api
+* Item shop Availability
+* Text to image converter
 
 # Rian Corcino
-1 - College transfer app
-2 - Topographical Google Map
-3 - AI generated flashcards (terms to definitions)
+* College transfer app
+* Topographical Google Map
+* AI generated flashcards (terms to definitions)
 
 
 ### Step 2: Evaluating App Ideas
@@ -121,4 +121,5 @@ How clearly defined is the product you want to build?
 | AI Shopping Comparison | Would be the hardest to code. Need to connect to multiple API databases with varying JSON structure. Also would likely require search and sort operations on massive queries.|
 
 
-# Final idea: AI Flashcards
+# Final idea:
+AI Flashcards 🥳

@@ -44,8 +44,6 @@ Stretch Features:
 
 - **ChatGPT**
   - **Generates accurate descriptions and terms**
-  - ...
-- ...
 
 ### 3. User Interaction
 

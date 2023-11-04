@@ -17,8 +17,8 @@
 
 <!-- Evaluation of your app across the following attributes -->
 
-- **Category:**
-- **Mobile:**
+- **Category: Education**
+- **Mobile: Allows for users to study anytime, anywhere. Whether it is at home, waiting for the bus, or right before a big exam.**
 - **Story:**
 - **Market:**
 - **Habit:**

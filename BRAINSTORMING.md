@@ -116,7 +116,7 @@ How clearly defined is the product you want to build?
 
 |Project                 |Answer
 |------------------------|-----------------------------------------------------------------------------------|
-| AI Flashcards          | Very doable. The only slightly challenging part will be connecting to ChatGPT. Otherwise, it essential operates on an array of text values and data.|
+| AI Flashcards          | Very doable. The only slightly challenging part will be connecting to ChatGPT. Otherwise, it essential operates on an array of text values and data. A stripped-down version of our app will be an interesting build as well since it will still provide us with experience on how to implement AI functionality into an application of this caliber. As for how defined our product is, it is simple and straightforward due to the nature of our features, allowing us to have a clear picture of what to build from the start. |
 | AI Tier List           | Could be a bit harder due to item rearrangement with GUI and ChatGPT. Makes for a moderately interesting build with saving masses of data to memory.|
 | AI Shopping Comparison | Would be the hardest to code. Need to connect to multiple API databases with varying JSON structure. Also would likely require search and sort operations on massive queries.|
 

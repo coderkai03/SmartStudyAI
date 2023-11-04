@@ -1,12 +1,12 @@
-### Brainstorming
+# Brainstorming
 
 ## Friday Availabilities
-Rowan - all day fridays
-Rian - anytime besides 3-5pm
-Enrique - I should be good after 5pm
-Erik - Good after 4:30 
-Andrew - Thursdays after 6pm and Fridays after 1pm, Saturday, Sunday after 8pm 
-Cody Monday Wednesday Thursday Friday Saturday Sunday after 1pm
+* Rowan - all day fridays
+* Rian - anytime besides 3-5pm
+* Enrique - I should be good after 5pm
+* Erik - Good after 4:30 
+* Andrew - Thursdays after 6pm and Fridays after 1pm, Saturday, Sunday after 8pm 
+* Cody Monday Wednesday Thursday Friday Saturday Sunday after 1pm
 
 **Meeting: Fridays 6-8pm**
 

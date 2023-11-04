@@ -1,17 +1,17 @@
-# **APP_NAME_HERE**
+# **AI-Flashcards**
 
 ## Table of Contents
 
 1. [App Overview](#App-Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-1. [Build Notes](#Build-Notes)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Build Notes](#Build-Notes)
 
 ## App Overview
 
 ### Description 
 
-**Description of your app**
+**AI-Flashcards is an education app designed to help users study anytime and anywhere. It caters to students who want to improve their knowledge and understanding of various subjects by providing a convenient way to access study materials and generate definitions for key terms using AI.**
 
 ### App Evaluation
 
@@ -19,10 +19,10 @@
 
 - **Category: Education**
 - **Mobile: Allows for users to study anytime, anywhere. Whether it is at home, waiting for the bus, or right before a big exam.**
-- **Story: **
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Story: AI-Flashcards empower students to maximize their study time by offering on-the-go access to study materials and intelligent term definition generation.**
+- **Market: Targeted towards K-12, College, and Post-Grads who need assistance with studying.**
+- **Habit: Designed to encourage consistent study habits.**
+- **Scope: Comprehensive study tool for a wide range of subjects.**
 
 ## Product Spec
 
@@ -30,18 +30,20 @@
 
 Required Features:
 
-- **fill in here**
-- ...
+- **Term input**
+- **Definition Generation**
+- **Topic input**
 
 Stretch Features:
 
-- **fill in here**
-- ...
+- **Shuffle Button**
+- **Review/History Button**
+- **Correct/Incorrect Counter**
 
 ### 2. Chosen API(s)
 
-- **list first API endpoint here**
-  - **list associated required feature here**
+- **ChatGPT**
+  - **Generates accurate descriptions and terms**
   - ...
 - ...
 
@@ -49,12 +51,12 @@ Stretch Features:
 
 Required Feature
 
-- **list first user action here**
-  - => **list result of user action here**
-  - ...
-- **list second user action here**
-  - => **list result of user action here**
-  - ...
+- **Term Input**
+  - => **User Action: Users will type in the study term they want a definition for.**
+  - => **Result of User Action: After entering a term, the AI will process it in the background, and users will see the generated definition displayed on the screen.**
+- **Topic Input**
+  - => **User Action: Users will type in the study topic they wish to study.**
+  - => **Result of User Action: After entering a topic, the AI will process it in the background, and users will see the generated topics flashcards.**
 
 ## Wireframes
 
@@ -75,7 +77,7 @@ For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
 ## License
 
-Copyright **yyyy** **your name**
+Copyright **2023** **Rowan W Osmon, Cody Kneale, Andrew Solbjor, Enrique V, Erik Perez, Rian Corcino**
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

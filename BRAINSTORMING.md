@@ -121,5 +121,5 @@ How clearly defined is the product you want to build?
 | AI Shopping Comparison | Would be the hardest to code. Need to connect to multiple API databases with varying JSON structure. Also would likely require search and sort operations on massive queries.|
 
 
-# Final Porject Idea:
+# Final Project Idea:
 AI Flashcards 🥳

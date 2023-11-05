@@ -17,12 +17,12 @@
 
 <!-- Evaluation of your app across the following attributes -->
 
-- **Category: Education**
-- **Mobile: Allows for users to study anytime, anywhere. Whether it is at home, waiting for the bus, or right before a big exam.**
-- **Story: AI-Flashcards empower students to maximize their study time by offering on-the-go access to study materials and intelligent term definition generation.**
-- **Market: Targeted towards K-12, College, and Post-Grads who need assistance with studying.**
-- **Habit: Designed to encourage consistent study habits.**
-- **Scope: Comprehensive study tool for a wide range of subjects.**
+- **Category:** Education
+- **Mobile:** Allows for users to study anytime, anywhere. Whether it is at home, waiting for the bus, or right before a big exam.
+- **Story:** AI-Flashcards empower students to maximize their study time by offering on-the-go access to study materials and intelligent term definition generation.
+- **Market:** Targeted towards K-12, College, and Post-Grads who need assistance with studying.
+- **Habit:** Designed to encourage consistent study habits.
+- **Scope:** Comprehensive study tool for a wide range of subjects (e.g. STEM, Humanitarian, Arts).
 
 ## Product Spec
 
@@ -31,38 +31,42 @@
 Required Features:
 
 - **Term input**
-- **Definition Generation**
 - **Topic input**
+- **Definition(s) Generation**
 
 Stretch Features:
 
 - **Shuffle Button**
 - **Review/History Button**
 - **Correct/Incorrect Counter**
+- **Edit Button**
+- **Delete Button**
 
 ### 2. Chosen API(s)
 
 - **ChatGPT**
-  - **Generates accurate descriptions and terms**
+  - **For entering topics:** Generates deck of accurate terms and definitions
+  - **For entering terms:** Generates accurate definition for individual term
 
 ### 3. User Interaction
 
 Required Feature
 
 - **Term Input**
-  - => **User Action: Users will type in the study term they want a definition for.**
-  - => **Result of User Action: After entering a term, the AI will process it in the background, and users will see the generated definition displayed on the screen.**
+  - => **User Action:** Users will type in the study term they want a definition for.
+  - => **Result of User Action:** After entering a term, the AI will process it in the background, and users will see the generated definition displayed on the screen.
 - **Topic Input**
-  - => **User Action: Users will type in the study topic they wish to study.**
-  - => **Result of User Action: After entering a topic, the AI will process it in the background, and users will see the generated topics flashcards.**
+  - => **User Action:** Users will type in the study topic they wish to study.
+  - => **Result of User Action:** After entering a topic, the AI will process it in the background, and users will see the generated topics flashcards.
 
 ## Wireframes
 
 <!-- Add picture of your hand sketched wireframes in this section -->
-<img src="![wireframe](https://github.com/coderkai03/AI-Flashcards/assets/91811876/7d194b6b-2150-4c23-b71a-e37e0f0472fc)
-" width=600>
+<img src="https://github.com/coderkai03/AI-Flashcards/blob/main/wireframe1.jpg" width=300>
 
 ### [BONUS] Digital Wireframes & Mockups
+
+<img src="https://github.com/coderkai03/AI-Flashcards/blob/main/wireframe2.png" width=1000>
 
 ### [BONUS] Interactive Prototype
 

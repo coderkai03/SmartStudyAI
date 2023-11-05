@@ -62,7 +62,7 @@ Required Feature
 ## Wireframes
 
 <!-- Add picture of your hand sketched wireframes in this section -->
-<img src="https://github.com/coderkai03/AI-Flashcards/blob/main/wireframe1.jpg" width=300>
+<img src="https://github.com/coderkai03/AI-Flashcards/blob/main/wireframe1.png" width=300>
 
 ### [BONUS] Digital Wireframes & Mockups
 

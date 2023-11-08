@@ -13,6 +13,11 @@
         android:theme="@style/Theme.AiFlashcards"
         tools:targetApi="31">
         <activity
+            android:name=".build_deck_activity"
+            android:exported="false"
+            android:label="@string/title_activity_build_deck"
+            android:theme="@style/Theme.AiFlashcards" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

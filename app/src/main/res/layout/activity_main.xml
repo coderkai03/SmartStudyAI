@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="Start Screen Image"
-            android:src="@tools:sample/avatars" />
+            android:src="@drawable/sab" />
 
         <Button
             android:id="@+id/start_button"

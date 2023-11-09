@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/background"
     android:orientation="vertical">
 
     <!-- Add UI elements for building a deck here -->
@@ -27,6 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/background"
             android:text="By Topic" />
 
         <TextView
@@ -42,6 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/background"
             android:text="By Term" />
 
     </LinearLayout>
@@ -49,13 +54,17 @@
     <ImageView
         android:id="@+id/topic_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/sab"/>
+        android:layout_height="455dp"
+        android:src="@drawable/by_topic_diagram"
+
+        />
 
     <Button
         android:id="@+id/build_deck_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonBackground"
+        android:textColor="@color/background"
         android:text="Build" />
 
 </LinearLayout>

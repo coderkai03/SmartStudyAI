@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,19 +24,25 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Ai Flashcards"
-            android:textSize="48dp"/>
+            android:textColor="@color/buttonBackground"
+            android:textSize="48dp"
+            />
 
         <ImageView
             android:id="@+id/start_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="Start Screen Image"
-            android:src="@drawable/sab" />
+            android:src="@drawable/abstract_cards" />
 
         <Button
             android:id="@+id/start_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/background"
             android:text="Start Learning" />
     </LinearLayout>
 

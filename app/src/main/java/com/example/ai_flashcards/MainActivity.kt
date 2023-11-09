@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         next_Activity_button.setOnClickListener {
             // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
             // the components you are targeting. Intent to start an activity called SecondActivity with the following code.
-            val intent = Intent(this, BuildByTopicActivity::class.java)
+            val intent = Intent(this, StudyActivity::class.java)
             // start the activity connect to the specified class
             startActivity(intent)
         }

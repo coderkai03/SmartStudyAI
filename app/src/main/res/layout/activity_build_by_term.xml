@@ -1,27 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BackgroundBlue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BuildByTerm">
 
     <TextView
         android:id="@+id/question3_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:textColor="@android:color/background_dark"
-        android:textStyle="bold" />
+        android:text="Build deck"
+        android:textColor="@color/backgroundClay"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <Button
         android:id="@+id/third_activity_previous_button"
-        android:layout_width="110dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="200dp"
-        android:text="previous"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="By Topic"
         android:textColor="@android:color/background_dark"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-</RelativeLayout>
+        android:backgroundTint="@color/backgroundLightBlue"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/ortextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question3_id" />
+
+    <ImageView
+        android:id="@+id/termimageView"
+        android:layout_width="296dp"
+        android:layout_height="420dp"
+        app:srcCompat="@drawable/by_term_diagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ortextView"
+        android:layout_marginTop="15dp"
+         />
+
+    <TextView
+        android:id="@+id/ortextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="35dp"
+        android:text="OR"
+        android:textColor="@color/backgroundClay"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/termimageView"
+        app:layout_constraintStart_toEndOf="@id/third_activity_previous_button"
+        app:layout_constraintTop_toBottomOf="@+id/question3_id"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <Button
+        android:id="@+id/buildByTerm"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/backgroundClay"
+        android:text="Build"
+        android:textColor="@color/BackgroundBlue"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/termimageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buildByTerm2"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:text="By Term"
+        android:textStyle="bold"
+        android:textColor="@color/BackgroundBlue"
+        android:backgroundTint="@color/backgroundLightBlue"
+
+        app:layout_constraintStart_toEndOf="@id/ortextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question3_id"
+        app:layout_constraintBottom_toTopOf="@id/termimageView"
+        android:layout_marginTop="30dp"
+
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

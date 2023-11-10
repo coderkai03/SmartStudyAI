@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         // In question1 get the TextView use by findViewById()
         // In TextView set question Answer for message
-        question1.text = "Q1 - How to pass the data between activities in Android? Ans - Intent".trimIndent()
+        //question1.text = "Q1 - How to pass the data between activities in Android? Ans - Intent".trimIndent()
 
         // Add_button add clicklistener
         next_Activity_button.setOnClickListener {

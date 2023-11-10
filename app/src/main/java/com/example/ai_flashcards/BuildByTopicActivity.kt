@@ -26,7 +26,7 @@ class BuildByTopicActivity : AppCompatActivity() {
 
         // In question1 get the TextView use by findViewById()
         // In TextView set question Answer for message
-        question2.text = "Q2 - What is ADB in android? Ans - Android Debug Bridge".trimIndent()
+        //question2.text = "Q2 - What is ADB in android? Ans - Android Debug Bridge".trimIndent()
 
         // Add_button add clicklistener
         next_button.setOnClickListener {

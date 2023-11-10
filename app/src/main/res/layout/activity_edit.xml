@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:background="@color/BackgroundBlue">
+
+    <TextView
+        android:id="@+id/study_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".05" />
+
+    <EditText
+        android:id="@+id/edit_term"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_corners_lightblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/study_title"
+        app:layout_constraintBottom_toTopOf="@id/edit_definition"/>
+
+    <EditText
+        android:id="@+id/edit_definition"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_corners_lightblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_term"
+        app:layout_constraintBottom_toTopOf="@id/edit_save"/>
+
+    <Button
+        android:id="@+id/edit_save"
+        android:text="save"
+        android:textSize="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners_clay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_definition"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,5 +32,13 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
         val card = flashcardList[position]
 
         holder.flashcard.text = card.term
+
+        holder.flashcard.setOnClickListener {
+            if (holder.flashcard.text == card.term) {
+                holder.flashcard.text = card.definition
+            } else {
+                holder.flashcard.text = card.term
+            }
+        }
     }
 }

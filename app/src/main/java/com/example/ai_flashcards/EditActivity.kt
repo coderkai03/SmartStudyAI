@@ -11,7 +11,6 @@ class EditActivity : AppCompatActivity() {
         setContentView(R.layout.activity_edit)
 
         val save_button = findViewById<Button>(R.id.edit_save)
-
         save_button.setOnClickListener{
             val intent = Intent(this, StudyActivity::class.java)
             startActivity(intent)

@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class Flashcard(
-    val term: String,
+    var term: String,
     var definition: String
 )
 
@@ -29,15 +29,19 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
     override fun getItemCount() = flashcardList.size
 
     override fun onBindViewHolder(holder: FlashcardViewHolder, position: Int) {
+        //flashcard data (ONLY ONE SIDE VISIBLE)
         val card = flashcardList[position]
 
+        //current button text
         holder.flashcard.text = card.term
 
         holder.flashcard.setOnClickListener {
             if (holder.flashcard.text == card.term) {
-                holder.flashcard.text = card.definition
+                holder.flashcard.text = card.definition + ">"
+                card.definition += ">"
             } else {
-                holder.flashcard.text = card.term
+                holder.flashcard.text = card.term + ">"
+                card.term += ">"
             }
         }
     }

@@ -1,30 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@color/BackgroundBlue"
     tools:layout_editor_absoluteY="81dp">
 
+
+    <!-- add button after click this we can goto another activity-->
     <TextView
         android:id="@+id/question1_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:text=""
-        android:textColor="@android:color/background_dark"
-        android:textStyle="bold" />
+        android:text="AI Flashcard"
+        android:textColor="@color/backgroundClay"
+        android:textStyle="bold"
+        android:textSize="39dp"
+        android:layout_marginTop="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
 
-    <!-- add button after click this we can goto another activity-->
+    <ImageView
+        android:id="@+id/start_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/abstract_cards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question1_id"
+        android:layout_marginTop="65dp"
+         />
+
     <Button
         android:id="@+id/first_activity_button"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="200dp"
-        android:text="Next"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+
+        android:text="Start Learning"
         android:textColor="@android:color/background_dark"
         android:textSize="15sp"
-        android:textStyle="bold" />
-</RelativeLayout>
+        android:textStyle="bold"
+        android:backgroundTint="@color/backgroundClay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_image"
+        android:layout_marginTop="85dp"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

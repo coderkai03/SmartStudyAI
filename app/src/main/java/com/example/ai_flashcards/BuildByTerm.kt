@@ -24,7 +24,7 @@ class BuildByTerm : AppCompatActivity() {
 
         // In question1 get the TextView use by findViewById()
         // In TextView set question Answer for message
-        question3.text = "Q3 - How to store heavy structured data in android? Ans - SQlite database ".trimIndent()
+        //question3.text = "Q3 - How to store heavy structured data in android? Ans - SQlite database ".trimIndent()
 
         // Add_button add clicklistener
         previous_button.setOnClickListener {

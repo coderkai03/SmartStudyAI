@@ -57,8 +57,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/BackgroundBlue"
-        android:backgroundTint="@color/backgroundLightBlue"
-
+        android:backgroundTint="@color/backgroundGrayBlue"
         app:layout_constraintStart_toEndOf="@id/ortextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/term_title"

@@ -36,7 +36,7 @@ class StudyActivity : AppCompatActivity() {
         val shuffle = findViewById<Button>(R.id.shuffle)
         val edit = findViewById<Button>(R.id.edit)
         val add = findViewById<Button>(R.id.add)
-        val delete = findViewById<Button>(R.id.delete)
+        //val delete = findViewById<Button>(R.id.delete)
         val home = findViewById<Button>(R.id.home)
 
         // Find background icons
@@ -51,7 +51,7 @@ class StudyActivity : AppCompatActivity() {
         shuffle.background = shuffle_icon
         edit.background = edit_icon
         add.background = add_icon
-        delete.background = delete_icon
+        //delete.background = delete_icon
         home.background = home_icon
 
         // Set button onClicks (shuffle/delete are unique)

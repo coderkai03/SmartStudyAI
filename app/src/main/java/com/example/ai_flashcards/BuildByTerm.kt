@@ -42,12 +42,16 @@ class BuildByTerm : AppCompatActivity() {
         study_screen.setOnClickListener {
             val intent = Intent(this, StudyActivity::class.java)
 
+            val spsize = sharedPrefs.all.size
+            val cardIndex = if (sharedPrefs.contains("input_topic")) spsize else spsize+1
             with(sharedPrefs.edit()) {
-                putString("input_term", inputTerm.toString())
+
+                putString("card${cardIndex}", inputTerm.text.toString()+"|null${cardIndex}")
+
                 apply()
             }
 
-            val spterm = sharedPrefs.getString("input_term", "not found")
+            val spterm = sharedPrefs.getString("card${cardIndex}", "not found")
 
             val term = if (spterm == null) "not found" else spterm
 

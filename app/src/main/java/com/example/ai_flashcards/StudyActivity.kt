@@ -63,13 +63,8 @@ class StudyActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        //load existing cards
-        if (sharedPrefs.all.size == 1) {
-            //load dummy card data (REMOVE LATER)
-            Log.d("StudyActivity", "starting with test cards")
-            testFillFlashcards()
-        }
-        else {
+        //
+        if (sharedPrefs.all.size != 0) {
             Log.d("StudyActivity", "found existing cards")
             loadFlashcards()
         }
@@ -86,32 +81,25 @@ class StudyActivity : AppCompatActivity() {
 
 
     private fun loadFlashcards() {
-//        flashcardList.clear()
 
-        //retrieve flashcard data
-        if (sharedPrefs.all.isNotEmpty()){
-            for ((key, value) in sharedPrefs.all) {
-                val cardInfo = value.toString().split("|")
-                flashcardList.add(Flashcard(cardInfo[0], cardInfo[1]))
-                Log.d("StudyActivity", flashcardList.last().toString())
+        for ((key, value) in sharedPrefs.all.entries) {
+
+            if (key != "input_topic") {
+                val value = sharedPrefs.getString(key, "nullVal")
+
+                // Process key and value here
+                val cardInfo = value?.toString()?.split("|")
+                Log.d("StudyActivity", "loading $cardInfo")
+                if (cardInfo != null && cardInfo.size == 2) {
+                    Log.d("StudyActivity", "loading card!")
+                    flashcardList.add(Flashcard(cardInfo[0], cardInfo[1]))
+                    Log.d("StudyActivity", flashcardList.last().toString())
+                }
             }
         }
-    }
-
-    private fun testFillFlashcards() {
-        Log.d("StudyActivity", "Filling with dummy data")
-
-        clearCardsAndPrefs()
-
-        //test dummy data for flashcards
-        for (i in 0 until 10) {
-            flashcardList.add(Flashcard("Term $i", "Definition $i"))
-        }
-
         rv_flashcards.adapter?.notifyDataSetChanged()
-
-        cacheCards()
     }
+
 
     private fun setScreenButtons(button: Button, screen: Class<*>) {
 
@@ -121,11 +109,8 @@ class StudyActivity : AppCompatActivity() {
             val intent = Intent(this, screen)
 
             //only cache cards when going to add/edit
-            if (screen == BuildByTopicActivity::class.java || screen == EditActivity::class.java){
+            if (screen == BuildByTopicActivity::class.java || screen == EditActivity::class.java) {
                 cacheCards()
-            }
-            else if (screen == MainActivity::class.java) {
-                clearCardsAndPrefs()
             }
 
             startActivity(intent)
@@ -133,32 +118,31 @@ class StudyActivity : AppCompatActivity() {
     }
 
     private fun cacheCards() {
+        Log.d("StudyActivity", "caching cards")
+
+        //clear sharedprefs first
+        val topic = sharedPrefs.getString("input_topic", "null")
+        sharedPrefs.edit().clear()
+
+        //add topic if existed
+        if (topic != "null") {
+            sharedPrefs.edit().putString("input_topic", topic)
+        }
+
+        //add cards to sharedprefs
         with(sharedPrefs.edit()) {
             for (i in 0 until flashcardList.size) { //save cards to sharedPrefs
+
                 val flashcard = arrayOf(
                     flashcardList[i].term,
                     flashcardList[i].definition
+
                 ).joinToString("|")
-                putString("card$i", flashcard)
+
+                putString("card${i + 1}", flashcard)
             }
+
             apply()
         }
-    }
-
-    private fun clearCardsAndPrefs() {
-        // Clear all flashcard data from shared preferences
-        with(sharedPrefs.edit()) {
-            for ((key, _) in sharedPrefs.all) {
-                remove(key)
-            }
-            apply()
-        }
-
-        // Log to check if flashcardList is cleared
-        Log.d("StudyActivity", "FlashcardList size before clearing: ${flashcardList.size}")
-
-        // Clear flashcardList and update the adapter
-        flashcardList.clear()
-        rv_flashcards.adapter?.notifyDataSetChanged()
     }
 }

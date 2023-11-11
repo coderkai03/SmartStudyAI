@@ -8,41 +8,27 @@ import androidx.appcompat.app.AppCompatActivity
 
 class BuildByTopicActivity : AppCompatActivity() {
 
-    // define the global variable
-    private lateinit var question2: TextView
-    // Add button Move to next Activity and previous Activity
-    private lateinit var next_button: Button
-    private lateinit var previous_button: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_build_by_topic)
 
-        // by ID we can use each component which id is assign in xml
-        // file use findViewById() to get the both Button and textview
-        next_button = findViewById(R.id.second_activity_next_button)
-        previous_button = findViewById(R.id.second_activity_previous_button)
-        question2 = findViewById(R.id.question2_id)
+        val term_screen: Button
+        val study_screen: Button
 
-        // In question1 get the TextView use by findViewById()
-        // In TextView set question Answer for message
-        //question2.text = "Q2 - What is ADB in android? Ans - Android Debug Bridge".trimIndent()
+        term_screen = findViewById(R.id.by_term)
+        study_screen = findViewById(R.id.buildByTopic)
+
 
         // Add_button add clicklistener
-        next_button.setOnClickListener {
-            // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
-            // the components you are targeting. Intent to start an activity called ThirdActivity with the following code.
+        term_screen.setOnClickListener {
             val intent = Intent(this, BuildByTerm::class.java)
-            // start the activity connect to the specified class
             startActivity(intent)
         }
 
         // Add_button add clicklistener
-        previous_button.setOnClickListener {
-            // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
-            // the components you are targeting. Intent to start an activity called oneActivity with the following code
-            val intent = Intent(this, MainActivity::class.java)
-            // start the activity connect to the specified class
+        study_screen.setOnClickListener {
+            val intent = Intent(this, StudyActivity::class.java)
             startActivity(intent)
         }
     }

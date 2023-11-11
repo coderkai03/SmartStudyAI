@@ -8,29 +8,29 @@ import androidx.appcompat.app.AppCompatActivity
 
 class BuildByTerm : AppCompatActivity() {
 
-    // define the global variable
-    private lateinit var question3: TextView
-    // Add button Move previous activity
-    private lateinit var previous_button: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_build_by_term)
 
+        val topic_screen: Button
+        val study_screen: Button
+
         // by ID we can use each component which id is assign in xml
         // file use findViewById() to get the Button and textview.
-        previous_button = findViewById(R.id.third_activity_previous_button)
-        question3 = findViewById(R.id.question3_id)
-
-        // In question1 get the TextView use by findViewById()
-        // In TextView set question Answer for message
-        //question3.text = "Q3 - How to store heavy structured data in android? Ans - SQlite database ".trimIndent()
+        topic_screen = findViewById(R.id.topic_button)
+        study_screen = findViewById(R.id.buildByTerm)
 
         // Add_button add clicklistener
-        previous_button.setOnClickListener {
-            // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
-            // the components you are targeting. Intent to start an activity called SecondActivity with the following code:
+        topic_screen.setOnClickListener {
             val intent = Intent(this, BuildByTopicActivity::class.java)
+            // start the activity connect to the specified class
+            startActivity(intent)
+        }
+
+        // Add_button add clicklistener
+        study_screen.setOnClickListener {
+            val intent = Intent(this, StudyActivity::class.java)
             // start the activity connect to the specified class
             startActivity(intent)
         }

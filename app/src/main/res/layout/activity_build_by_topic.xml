@@ -27,12 +27,10 @@
         android:id="@+id/by_topic"
         android:layout_width="130dp"
         android:layout_height="48dp"
-        android:backgroundTint="@color/backgroundLightBlue"
+        android:backgroundTint="@color/backgroundGrayBlue"
         android:text="By Topic"
         android:textColor="@color/BackgroundBlue"
         android:textSize="20dp"
-        android:enabled="false"
-
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/orText"
         app:layout_constraintBottom_toTopOf="@id/input_topic"

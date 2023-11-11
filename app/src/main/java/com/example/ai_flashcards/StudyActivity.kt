@@ -27,6 +27,7 @@ class StudyActivity : AppCompatActivity() {
 
         //shared prefs
         sharedPrefs = this.getSharedPreferences(this.packageName, Context.MODE_PRIVATE)
+        Log.d("StudyActivity", sharedPrefs.all.toString())
 
         //set up recyclerview
         setRVFlashcards()
@@ -63,15 +64,14 @@ class StudyActivity : AppCompatActivity() {
         super.onResume()
 
         //load existing cards
-        if (sharedPrefs.all != null) {
-            Log.d("StudyActivity", "found existing cards")
-            loadFlashcards()
-        }
-        else {
-
+        if (sharedPrefs.all.size == 1) {
             //load dummy card data (REMOVE LATER)
             Log.d("StudyActivity", "starting with test cards")
             testFillFlashcards()
+        }
+        else {
+            Log.d("StudyActivity", "found existing cards")
+            loadFlashcards()
         }
     }
 
@@ -86,10 +86,10 @@ class StudyActivity : AppCompatActivity() {
 
 
     private fun loadFlashcards() {
-        flashcardList.clear()
+//        flashcardList.clear()
 
         //retrieve flashcard data
-        if (sharedPrefs.all != null){
+        if (sharedPrefs.all.isNotEmpty()){
             for ((key, value) in sharedPrefs.all) {
                 val cardInfo = value.toString().split("|")
                 flashcardList.add(Flashcard(cardInfo[0], cardInfo[1]))

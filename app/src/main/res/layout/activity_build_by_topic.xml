@@ -8,7 +8,7 @@
     tools:context=".BuildByTopicActivity">
 
     <TextView
-        android:id="@+id/question2_id"
+        android:id="@+id/topic_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Build deck"
@@ -24,10 +24,9 @@
 
 
     <Button
-        android:id="@+id/second_activity_next_button"
-        android:layout_width="110dp"
+        android:id="@+id/by_term"
+        android:layout_width="130dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="48dp"
         android:backgroundTint="@color/backgroundLightBlue"
         android:text="By Term"
         android:textColor="@color/BackgroundBlue"
@@ -36,26 +35,28 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageTopic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/orText"
 
-
-        app:layout_constraintTop_toBottomOf="@+id/question2_id"
-        app:layout_constraintVertical_bias="0.972" />
+        app:layout_constraintTop_toBottomOf="@+id/topic_title"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/second_activity_previous_button"
-        android:layout_width="110dp"
+        android:id="@+id/by_topic"
+        android:layout_width="130dp"
         android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="@color/backgroundLightBlue"
-        android:text="Home"
+        android:text="By Topic"
         android:textColor="@color/BackgroundBlue"
         android:textSize="18sp"
+        android:enabled="false"
 
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/orText"
-        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintBottom_toTopOf="@+id/imageTopic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question2_id" />
+        app:layout_constraintTop_toBottomOf="@+id/topic_title"
+        app:layout_constraintVertical_bias="1.0"/>
 
     <ImageView
         android:id="@+id/imageTopic"
@@ -65,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question2_id"
+        app:layout_constraintTop_toBottomOf="@+id/topic_title"
 
         app:srcCompat="@drawable/by_topic_diagram_1" />
 
@@ -74,17 +75,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginEnd="28dp"
         android:text="OR"
         android:textColor="@color/backgroundClay"
         android:textSize="25dp"
 
 
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageTopic"
-        app:layout_constraintEnd_toStartOf="@+id/second_activity_next_button"
+        app:layout_constraintBottom_toTopOf="@id/imageTopic"
+        app:layout_constraintStart_toEndOf="@id/by_topic"
+        app:layout_constraintEnd_toStartOf="@id/by_term"
 
-        app:layout_constraintTop_toBottomOf="@+id/question2_id"
+        app:layout_constraintTop_toBottomOf="@id/topic_title"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button

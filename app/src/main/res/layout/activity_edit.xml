@@ -43,11 +43,12 @@
 
     <Button
         android:id="@+id/edit_save"
-        android:text="save"
+        android:text="Save"
         android:textSize="20dp"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:background="@drawable/rounded_corners_clay"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/backgroundClay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

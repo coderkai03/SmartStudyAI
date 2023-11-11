@@ -8,7 +8,7 @@
     tools:context=".BuildByTerm">
 
     <TextView
-        android:id="@+id/question3_id"
+        android:id="@+id/term_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Build deck"
@@ -23,11 +23,10 @@
          />
 
     <Button
-        android:id="@+id/third_activity_previous_button"
+        android:id="@+id/topic_button"
         android:layout_width="130dp"
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="15dp"
         android:text="By Topic"
         android:textColor="@android:color/background_dark"
         android:backgroundTint="@color/backgroundLightBlue"
@@ -35,7 +34,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/ortextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/question3_id" />
+        app:layout_constraintTop_toBottomOf="@id/term_title" />
 
     <ImageView
         android:id="@+id/termimageView"
@@ -52,7 +51,6 @@
         android:id="@+id/ortextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
         android:layout_marginTop="35dp"
         android:text="OR"
         android:textColor="@color/backgroundClay"
@@ -60,8 +58,9 @@
 
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/termimageView"
-        app:layout_constraintStart_toEndOf="@id/third_activity_previous_button"
-        app:layout_constraintTop_toBottomOf="@+id/question3_id"
+        app:layout_constraintStart_toEndOf="@id/topic_button"
+        app:layout_constraintTop_toBottomOf="@+id/term_title"
+        app:layout_constraintEnd_toStartOf="@id/term_button"
         app:layout_constraintVertical_bias="0.671" />
 
     <Button
@@ -81,7 +80,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/buildByTerm2"
+        android:id="@+id/term_button"
         android:layout_width="140dp"
         android:layout_height="48dp"
         android:text="By Term"
@@ -91,11 +90,8 @@
 
         app:layout_constraintStart_toEndOf="@id/ortextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/question3_id"
+        app:layout_constraintTop_toBottomOf="@id/term_title"
         app:layout_constraintBottom_toTopOf="@id/termimageView"
-        android:layout_marginTop="30dp"
-
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="146dp" />
+        android:layout_marginTop="30dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

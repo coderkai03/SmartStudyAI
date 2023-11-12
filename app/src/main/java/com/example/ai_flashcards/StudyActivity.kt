@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlin.math.log
+import kotlin.random.Random
 
 class StudyActivity : AppCompatActivity() {
 
@@ -55,9 +56,29 @@ class StudyActivity : AppCompatActivity() {
         home.background = home_icon
 
         // Set button onClicks (shuffle/delete are unique)
+        shuffleCards(shuffle)
         setScreenButtons(edit, EditActivity::class.java)
         setScreenButtons(add, BuildByTopicActivity::class.java)
         setScreenButtons(home, MainActivity::class.java)
+    }
+
+    private fun shuffleCards(button: Button) {
+
+        button.setOnClickListener{
+            val random = java.util.Random()
+
+            //shuffle cards list
+            for (i in 0 until flashcardList.size) {
+                val j = random.nextInt(i+1)
+
+                //swap elements
+                val temp = flashcardList[i]
+                flashcardList[i] = flashcardList[j]
+                flashcardList[j] = temp
+            }
+
+            rv_flashcards.adapter?.notifyDataSetChanged()
+        }
     }
 
     override fun onResume() {

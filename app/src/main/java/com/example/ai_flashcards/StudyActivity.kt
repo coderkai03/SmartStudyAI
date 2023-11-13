@@ -26,6 +26,9 @@ class StudyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_study)
 
+        //set Flashcard hideEdits to true
+        Flashcard.hideEdits = true
+
         //shared prefs
         sharedPrefs = this.getSharedPreferences(this.packageName, Context.MODE_PRIVATE)
         Log.d("StudyActivity", sharedPrefs.all.toString())
@@ -57,9 +60,16 @@ class StudyActivity : AppCompatActivity() {
 
         // Set button onClicks (shuffle/delete are unique)
         shuffleCards(shuffle)
-        setScreenButtons(edit, EditActivity::class.java)
+        setShowHideEdit(edit)
         setScreenButtons(add, BuildByTopicActivity::class.java)
         setScreenButtons(home, MainActivity::class.java)
+    }
+
+    private fun setShowHideEdit(button: Button) {
+        button.setOnClickListener{
+            Flashcard.showHideEdits()
+            rv_flashcards.adapter?.notifyDataSetChanged()
+        }
     }
 
     private fun shuffleCards(button: Button) {
@@ -105,7 +115,7 @@ class StudyActivity : AppCompatActivity() {
 
         for ((key, value) in sharedPrefs.all.entries) {
 
-            if (key != "input_topic") {
+            if (key != "input_topic" && key != "edit") {
                 val value = sharedPrefs.getString(key, "nullVal")
 
                 // Process key and value here
@@ -121,10 +131,7 @@ class StudyActivity : AppCompatActivity() {
         rv_flashcards.adapter?.notifyDataSetChanged()
     }
 
-
     private fun setScreenButtons(button: Button, screen: Class<*>) {
-
-
         //set icon button clicks
         button.setOnClickListener {
             val intent = Intent(this, screen)

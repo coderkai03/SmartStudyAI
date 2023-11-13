@@ -14,7 +14,15 @@ import androidx.recyclerview.widget.RecyclerView
 class Flashcard(
     var term: String,
     var definition: String
-)
+) {
+    companion object {
+        var hideEdits: Boolean = true
+
+        fun showHideEdits() {
+            hideEdits = !hideEdits
+        }
+    }
+}
 
 class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView.Adapter<FlashcardAdapter.FlashcardViewHolder>(){
 
@@ -49,6 +57,16 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
 
         //flashcard data (ONLY ONE SIDE VISIBLE)
         val card = flashcardList[position]
+
+        //showHide edit buttons
+        if (Flashcard.hideEdits == true) {
+            holder.edit.visibility = View.INVISIBLE
+            holder.trash.visibility = View.INVISIBLE
+        }
+        else {
+            holder.edit.visibility = View.VISIBLE
+            holder.trash.visibility = View.VISIBLE
+        }
 
         //current button text
         holder.flashcard.text = card.term

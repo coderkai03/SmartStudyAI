@@ -38,6 +38,7 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
 
     override fun onBindViewHolder(holder: FlashcardViewHolder, position: Int) {
         val context = holder.itemView.context
+        val sharedPrefs = context.getSharedPreferences("com.example.ai_flashcards", Context.MODE_PRIVATE)
 
         //set button icons
         val edit_icon = context.resources.getDrawable(R.drawable.edit_icon)
@@ -59,11 +60,7 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
 
         //onclick: edit card
         holder.edit.setOnClickListener {
-            val sharedPrefs: SharedPreferences
 
-
-            //store card edits in sharedprefs
-            sharedPrefs = context.getSharedPreferences("com.example.ai_flashcards", Context.MODE_PRIVATE)
             with (sharedPrefs.edit()) {
                 putString("edit", card.term + "|" + card.definition)
                 apply()
@@ -77,8 +74,20 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
 
         //onclick: delete card
         holder.trash.setOnClickListener {
+            //find key
+            for ((key, value) in sharedPrefs.all.entries) {
+                if (value == card.term+"|"+card.definition && key != "edit") {
+
+                    //remove key
+                    with (sharedPrefs.edit()) {
+                        remove(key)
+                        apply()
+                    }
+                }
+            }
+
             flashcardList.removeAt(position)
-            this.notifyDataSetChanged()
+            this?.notifyDataSetChanged()
         }
     }
 }

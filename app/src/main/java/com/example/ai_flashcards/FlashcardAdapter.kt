@@ -37,6 +37,15 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
     override fun getItemCount() = flashcardList.size
 
     override fun onBindViewHolder(holder: FlashcardViewHolder, position: Int) {
+        val context = holder.itemView.context
+
+        //set button icons
+        val edit_icon = context.resources.getDrawable(R.drawable.edit_icon)
+        val delete_icon = context.resources.getDrawable(R.drawable.delete_icon)
+
+        holder.edit.background = edit_icon
+        holder.trash.background = delete_icon
+
         //flashcard data (ONLY ONE SIDE VISIBLE)
         val card = flashcardList[position]
 
@@ -51,7 +60,7 @@ class FlashcardAdapter(val flashcardList: MutableList<Flashcard>) : RecyclerView
         //onclick: edit card
         holder.edit.setOnClickListener {
             val sharedPrefs: SharedPreferences
-            val context = holder.itemView.context
+
 
             //store card edits in sharedprefs
             sharedPrefs = context.getSharedPreferences("com.example.ai_flashcards", Context.MODE_PRIVATE)

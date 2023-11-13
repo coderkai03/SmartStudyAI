@@ -32,8 +32,8 @@
 
     <Button
         android:id="@+id/trashcard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         app:layout_constraintStart_toStartOf="@id/cardview"
         app:layout_constraintTop_toTopOf="@id/cardview"
         android:layout_marginStart="8dp"
@@ -41,8 +41,8 @@
 
     <Button
         android:id="@+id/editcard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="@id/cardview"

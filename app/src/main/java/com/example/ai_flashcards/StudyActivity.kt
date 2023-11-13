@@ -105,7 +105,7 @@ class StudyActivity : AppCompatActivity() {
 
         for ((key, value) in sharedPrefs.all.entries) {
 
-            if (key != "input_topic") {
+            if (key != "input_topic" && key != "edit") {
                 val value = sharedPrefs.getString(key, "nullVal")
 
                 // Process key and value here
@@ -121,10 +121,7 @@ class StudyActivity : AppCompatActivity() {
         rv_flashcards.adapter?.notifyDataSetChanged()
     }
 
-
     private fun setScreenButtons(button: Button, screen: Class<*>) {
-
-
         //set icon button clicks
         button.setOnClickListener {
             val intent = Intent(this, screen)

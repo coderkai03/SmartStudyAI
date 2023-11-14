@@ -25,7 +25,7 @@
             android:text="Term"
             android:textColor="@color/black"
             android:backgroundTint="@color/backgroundLightBlue"
-            android:fontFamily="@font/archivo_black"
+            android:fontFamily="@font/archivo"
             android:paddingBottom="0dp"/>
 
     </androidx.cardview.widget.CardView>

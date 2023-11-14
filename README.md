@@ -8,7 +8,7 @@ Submitted by:
 - Erik Perez
 - Enrique Vargas
 
-Time spent: 4 hours spent in total
+Time spent: 70 hours spent in total
 
 ## Summary
 

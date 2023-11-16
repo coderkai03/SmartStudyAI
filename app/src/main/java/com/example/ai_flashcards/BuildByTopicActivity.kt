@@ -21,7 +21,7 @@ import java.net.URL
 import java.util.concurrent.CountDownLatch
 
 class BuildByTopicActivity : AppCompatActivity() {
-    private val openaiApiKey = "YOUR-API-KEY"
+    private val openaiApiKey = "yourkeyhere"
     private lateinit var sharedPrefs: SharedPreferences
     private lateinit var inputTopic: EditText
     private lateinit var loading: TextView

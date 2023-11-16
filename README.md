@@ -16,7 +16,7 @@ This document provides an overview, project spec, and wireframes for our team's 
 
 If we had to describe this milestone in three (3) emojis, they would be: 🦾👨‍💻👨‍🎓
 
-## Milestone Requirements
+## Milestone 1 Requirements
 
 The following REQUIRED features are completed:
 
@@ -37,12 +37,33 @@ The following REQUIRED files are included:
 The following BONUS features are implemented:
 
 - [ ] Added digital wireframe/mockup image(s)
-- [ ] Added a Video/GIF of an interactive prototype
+- [x] Added a Video/GIF of an interactive prototype
 
-The following EXTRA features are implemented:
+## Milestone 2 Requirements
+The following REQUIRED features are completed:
 
-- [ ] List anything else that you added to improve your submission!
+- [x] Assign features to each member of your group
+- [x] Establish a goal time for completing each feature
 
-## Notes
+The following REQUIRED files are included:
 
-Here's a place for any other notes on this milestone!
+- [x] Updated 📄 `project_spec.md`, which contains:
+  - [X] App Overview (Milestone 1)
+  - [X] App Spec (Milestone 1)
+  - [x] Checked off 2+ completed features
+  - [x] 2+ Videos/GIFs of build progress
+
+- [x] Our 🎥 Demo Video
+  - [x] We have also added the Demo Video Link to the Group Info Form on the course portal.
+
+## 🎥 Demo Video
+
+Here's a video that demos all of the app's implemented features:
+
+<div style="display: flex;">
+  <img src='https://github.com/coderkai03/SmartStudyAI/blob/main/SmartStudyAI_Demo.gif' title='Video Demo' width='300' alt='Video Demo' />
+  <img src='https://github.com/coderkai03/SmartStudyAI/blob/main/SmartStudyAI_Demo2.gif' title='Video Demo' width='300' alt='Video Demo' />
+</div>
+
+
+VIDEO created with **ScreenToGIF**

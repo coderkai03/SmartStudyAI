@@ -25,7 +25,7 @@ interface OnApiDataReceivedListener {
 
 
 class BuildByTerm : AppCompatActivity() {
-    private val openaiApiKey = "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"
+    private val openaiApiKey = "YOUR-API-KEY"
     private lateinit var sharedPrefs: SharedPreferences
     private lateinit var inputTerm: EditText
     private lateinit var loading: TextView

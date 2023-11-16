@@ -59,9 +59,10 @@ The following REQUIRED files are included:
 ## 🎥 Demo Video
 
 Here's a video that demos all of the app's implemented features:
-
+- Left: Build by Term
+- Right: Build by Topic + flashcard functions
 <div style="display: flex;">
-  <img src='https://github.com/coderkai03/SmartStudyAI/blob/main/SmartStudyAI_Demo.gif' title='Video Demo' width='300' alt='Video Demo' />
+  <img src='https://github.com/coderkai03/SmartStudyAI/blob/main/SmartStudyAI_Demo1.gif' title='Video Demo' width='300' alt='Video Demo' />
   <img src='https://github.com/coderkai03/SmartStudyAI/blob/main/SmartStudyAI_Demo2.gif' title='Video Demo' width='300' alt='Video Demo' />
 </div>
 

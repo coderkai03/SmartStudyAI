@@ -68,3 +68,16 @@ Here's a video that demos all of the app's implemented features:
 
 
 VIDEO created with **ScreenToGIF**
+
+## Future Features
+
+Easy
+- [x] Reset Cards
+
+Medium
+- [ ] Additional search parameters (reading level, # of cards, etc)
+- [ ] Toasts/Snackbars
+
+Hard
+- [ ] Modes: Study, Challenge, Test
+- [ ] Textbook search parameter

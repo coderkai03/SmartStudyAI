@@ -6,8 +6,10 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlin.math.log
@@ -40,14 +42,14 @@ class StudyActivity : AppCompatActivity() {
         val shuffle = findViewById<Button>(R.id.shuffle)
         val edit = findViewById<Button>(R.id.edit)
         val add = findViewById<Button>(R.id.add)
-        //val delete = findViewById<Button>(R.id.delete)
         val home = findViewById<Button>(R.id.home)
+        val reset = findViewById<Button>(R.id.reset)
+        val resetCV = findViewById<CardView>(R.id.reset_cv)
 
         // Find background icons
         val shuffle_icon = resources.getDrawable(R.drawable.shuffle_icon)
         val edit_icon = resources.getDrawable(R.drawable.edit_icon)
         val add_icon = resources.getDrawable(R.drawable.add_icon)
-        val delete_icon = resources.getDrawable(R.drawable.delete_icon)
         val home_icon = resources.getDrawable(R.drawable.home_icon)
 
 
@@ -55,20 +57,32 @@ class StudyActivity : AppCompatActivity() {
         shuffle.background = shuffle_icon
         edit.background = edit_icon
         add.background = add_icon
-        //delete.background = delete_icon
         home.background = home_icon
+        resetCV.visibility = View.INVISIBLE
 
         // Set button onClicks (shuffle/delete are unique)
+        setResetButton(reset)
         shuffleCards(shuffle)
-        setShowHideEdit(edit)
+        setShowHideEdit(edit, resetCV)
         setScreenButtons(add, BuildByTopicActivity::class.java)
         setScreenButtons(home, MainActivity::class.java)
     }
 
-    private fun setShowHideEdit(button: Button) {
+    private fun setResetButton(reset: Button) {
+        reset.setOnClickListener {
+            flashcardList.clear()
+            rv_flashcards.adapter?.notifyDataSetChanged()
+
+            sharedPrefs.edit().clear()
+        }
+    }
+
+    private fun setShowHideEdit(button: Button, reset: CardView) {
         button.setOnClickListener{
             Flashcard.showHideEdits()
             rv_flashcards.adapter?.notifyDataSetChanged()
+
+            reset.visibility = if (reset.visibility == View.VISIBLE) View.INVISIBLE else View.VISIBLE
         }
     }
 
